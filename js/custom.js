@@ -200,6 +200,22 @@ $(function () {
 		});
 	});
 
+	// 1. When send button is clicked redirect the page to itself
+		// 2. Once redirected the contact form should no longer be there and instead a thank you message
+	const sendBt = document .querySelector(".main_bt");
+	const thankYouMsg = document.querySelector(".email_box");
+
+	sendBt.addEventListener('click', function(e) {
+		e.preventDefault();
+		thankYouMsg.innerHTML = "<h2 style='color:white;'>Thank you for your message</h2>"
+		// still need to add more styling to thank you message
+		// also need to make page redirect to itself
+
+		// window.location.reload();
+		//though that would just refresh the page...
+	})
+
+
 	/* heroslider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
