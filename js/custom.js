@@ -207,7 +207,7 @@ $(function () {
 
 	sendBt.addEventListener('click', function(e) {
 		e.preventDefault();
-		thankYouMsg.innerHTML = "<h2 style='color:white;'>Thank you for you're message</h2>"
+		thankYouMsg.innerHTML = "<h2 style='color:white;'>Thank you for your message</h2>"
 		// still need to add more styling to thank you message
 		// also need to make page redirect to itself
 
